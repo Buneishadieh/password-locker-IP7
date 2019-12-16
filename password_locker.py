@@ -37,12 +37,12 @@ class Credentials:
             self.account_password = account_password
 
         @classmethod
-        def check_user_exist(cls, account_username, password):
-
+        def check_user_exist(cls, user_name, password):
+ 
             # Method that checks if a user exist from user list.
 
             for user in User.user_list:
-                if user.user_name == account_username and user.password == password:
+                if user.user_name == user_name and user.password == password:
                     return True
                 return False
 
