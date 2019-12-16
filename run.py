@@ -16,8 +16,13 @@ def save_user(user):
     user.user_save()
 
 def display_users():
+    # Function to diplay users.
     return User.display_users()
 
-    # Function to diplay users.
+def login_user(user_name, password):
+    # function that checks whether a user exists and then logs the user in.
+
+    check_user_exist = Credentials.check_user_exist(user_name, password)
+    return check_user_exist
 
 
