@@ -25,4 +25,13 @@ def login_user(user_name, password):
     check_user_exist = Credentials.check_user_exist(user_name, password)
     return check_user_exist
 
+####
+
+def create_credential(account_name, account_username, account_password):
+    # Function to create a new credential.
+
+    new_credential = Credentials(account_name, account_username, account_password)
+    return new_credential
+
+
 
