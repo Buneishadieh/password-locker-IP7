@@ -14,3 +14,10 @@ def save_user(user):
     # Function to save user.
 
     user.user_save()
+
+def display_users():
+    return User.display_users()
+
+    # Function to diplay users.
+
+
