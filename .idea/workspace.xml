@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91649dad-39c6-479f-80c5-7c3fcb3ee330" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_locker.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_locker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python tests.Unittests for passsword_locker_test.TestUser.test_save_multiple_user">
     <configuration name="password_locker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,7 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for passsword_locker_test.TestUser" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for passsword_locker_test.TestUser.test_init" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,11 +79,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;passsword_locker_test.TestUser&quot;" />
+      <option name="_new_target" value="&quot;passsword_locker_test.TestUser.test_init&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for passsword_locker_test.TestUser.test_display_users.TestCredentials" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for passsword_locker_test.TestUser.test_save_multiple_user" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,7 +93,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;passsword_locker_test.TestUser.test_display_users.TestCredentials&quot;" />
+      <option name="_new_target" value="&quot;passsword_locker_test.TestUser.test_save_multiple_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -111,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser.test_save_multiple_user" />
         <item itemvalue="Python.password_locker" />
+        <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser.test_init" />
+        <item itemvalue="Python.run" />
         <item itemvalue="Python tests.Unittests in passsword_locker_test.py" />
-        <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser.test_display_users.TestCredentials" />
-        <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -145,22 +147,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1290" height="24" key="GridCell.Tab.0.bottom" timestamp="1576462572446">
+    <state x="251" y="59" width="800" height="684" key="#Inspections" timestamp="1576473487794">
       <screen x="0" y="27" width="1312" height="741" />
     </state>
-    <state width="1290" height="24" key="GridCell.Tab.0.bottom/0.27.1312.741@0.27.1312.741" timestamp="1576462572446" />
-    <state width="1290" height="24" key="GridCell.Tab.0.center" timestamp="1576462572445">
+    <state x="251" y="59" width="800" height="684" key="#Inspections/0.27.1312.741@0.27.1312.741" timestamp="1576473487794" />
+    <state x="338" y="27" width="626" height="741" key="#run" timestamp="1576473081719">
       <screen x="0" y="27" width="1312" height="741" />
     </state>
-    <state width="1290" height="24" key="GridCell.Tab.0.center/0.27.1312.741@0.27.1312.741" timestamp="1576462572445" />
-    <state width="1290" height="24" key="GridCell.Tab.0.left" timestamp="1576462572444">
+    <state x="338" y="27" width="626" height="741" key="#run/0.27.1312.741@0.27.1312.741" timestamp="1576473081719" />
+    <state width="1290" height="86" key="GridCell.Tab.0.bottom" timestamp="1576476078068">
       <screen x="0" y="27" width="1312" height="741" />
     </state>
-    <state width="1290" height="24" key="GridCell.Tab.0.left/0.27.1312.741@0.27.1312.741" timestamp="1576462572444" />
-    <state width="1290" height="24" key="GridCell.Tab.0.right" timestamp="1576462572446">
+    <state width="1290" height="86" key="GridCell.Tab.0.bottom/0.27.1312.741@0.27.1312.741" timestamp="1576476078068" />
+    <state width="1290" height="86" key="GridCell.Tab.0.center" timestamp="1576476078068">
       <screen x="0" y="27" width="1312" height="741" />
     </state>
-    <state width="1290" height="24" key="GridCell.Tab.0.right/0.27.1312.741@0.27.1312.741" timestamp="1576462572446" />
+    <state width="1290" height="86" key="GridCell.Tab.0.center/0.27.1312.741@0.27.1312.741" timestamp="1576476078068" />
+    <state width="1290" height="86" key="GridCell.Tab.0.left" timestamp="1576476078067">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="86" key="GridCell.Tab.0.left/0.27.1312.741@0.27.1312.741" timestamp="1576476078067" />
+    <state width="1290" height="86" key="GridCell.Tab.0.right" timestamp="1576476078068">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="86" key="GridCell.Tab.0.right/0.27.1312.741@0.27.1312.741" timestamp="1576476078068" />
+    <state width="1290" height="236" key="GridCell.Tab.1.bottom" timestamp="1576473403401">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="236" key="GridCell.Tab.1.bottom/0.27.1312.741@0.27.1312.741" timestamp="1576473403401" />
+    <state width="1290" height="236" key="GridCell.Tab.1.center" timestamp="1576473403400">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="236" key="GridCell.Tab.1.center/0.27.1312.741@0.27.1312.741" timestamp="1576473403400" />
+    <state width="1290" height="236" key="GridCell.Tab.1.left" timestamp="1576473403400">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="236" key="GridCell.Tab.1.left/0.27.1312.741@0.27.1312.741" timestamp="1576473403400" />
+    <state width="1290" height="236" key="GridCell.Tab.1.right" timestamp="1576473403400">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="236" key="GridCell.Tab.1.right/0.27.1312.741@0.27.1312.741" timestamp="1576473403400" />
+    <state x="308" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1576475053137">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state x="308" y="225" key="com.intellij.ide.util.TipDialog/0.27.1312.741@0.27.1312.741" timestamp="1576475053137" />
     <state x="319" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576462545982">
       <screen x="0" y="27" width="1312" height="741" />
     </state>

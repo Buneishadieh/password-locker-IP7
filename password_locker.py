@@ -68,8 +68,8 @@ class Credentials:
         def generate_password(self):
             char = string.ascii_uppercase + string.ascii_lowercase + string.digits + "!#$%^*"
 
-            gen_pass = "".join(random.choice(char) for _ in range(6))
+            gen_password = "".join(random.choice(char) for _ in range(6))
 
-            return gen_pass
+            return gen_password
 
         # End of class credentials

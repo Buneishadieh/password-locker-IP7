@@ -15,15 +15,18 @@ def save_user(user):
 
     user.user_save()
 
+
 def display_users():
     # Function to diplay users.
     return User.display_users()
+
 
 def login_user(user_name, password):
     # function that checks whether a user exists and then logs the user in.
 
     check_user_exist = Credentials.check_user_exist(user_name, password)
     return check_user_exist
+
 
 ####
 
@@ -71,20 +74,20 @@ def main():
         if short_code == "esc":
             print("Goodbye!")
             break
+        #
+        # elif short_code == "ca":
+        #     print("Sign Up")
+        #     print('-' * 10)
+        #     user_name = input("User_name: ")
+        #     password = input("Password: ")
+        #     email = input("Email: ")
 
-        elif short_code == "ca":
-            print("Sign Up")
-            print('-' * 10)
-            user_name = input("User_name: ")
-            password = input("Password: ")
-            email = input("Email: ")
+        # save_user(create_user(user_name, password, email))
+        # print('\n')
 
-            save_user(create_user(user_name, password, email))
-            print('\n')
-
-            print("account has been created succesfully!")
-            print('\n')
-            print('-' * 10)
+        # print("account has been created succesfully!")
+        # print('\n')
+        # print('-' * 10)
 
         elif short_code == "list":
             if display_users():
@@ -96,7 +99,7 @@ def main():
             else:
                 print("No users saved yet")
 
-        if short_code == "ca":
+        elif short_code == "ca":
             print("Create new account")
             print('*' * 10)
             account_name = input("Account name: ")
@@ -114,8 +117,34 @@ def main():
                 else:
                     print("Invalid!")
                     break
-            save_credential(create_credential(account_name, account_username, password))
+            save_credential(create_credential(account_name, account_username, account_password))
             print('*' * 10)
-            print(f"created account: \n Account:{account_name}\n User Name:{account_username} \n Password: {password}")
+            print(
+                f"created account: \n Account:{account_name}\n User Name:{account_username} \n Password: {account_password}")
+            print("account has been created succesfully!")
             print('*' * 10)
+        elif short_code == "da":
+            if display_accounts():
+                print("Here's your list of account(s): ")
+                print('#' * 10)
+            for account in display_accounts():
+                print(f" Site:{account.account_name} \n User Name:{account_username}\n Password:{account_password}")
+                print('#' * 10)
 
+            else:
+                print("You don't have an account!")
+
+        elif short_code == "esc":
+            print("come again!")
+            break
+        # else:
+        #     print("Invalid!")
+        #     break
+        else:
+            print("Please create an account inorder to proceed:")
+
+
+#    break
+
+if __name__ == '__main__':
+    main()
