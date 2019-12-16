@@ -33,7 +33,8 @@ def login_user(user_name, password):
 def create_credential(account_name, account_username, account_password):
     # Function to create a new credential.
 
-    new_credential = Credentials(account_name, account_username, account_password)
+    new_credential = Credentials(
+        account_name, account_username, account_password)
     return new_credential
 
 
@@ -57,7 +58,6 @@ def display_accounts():
 
 def generate_password():
     # Function that generates random password.
-
     password_gen = Credentials.generate_password()
     return password_gen
 
@@ -68,12 +68,12 @@ def main():
     while True:
         print('.' * 10)
         short_code = input(
-            "Use the following short codes: CA- create a new user account, LOG - login into your account, LIST - to display users list, DA - Displays accounts list, ESC - exit from password locker \n").lower().strip()
+            "Use the following short codes: CA- create a new user account, LOG - login into your account, LIST - to display users list, DA - Displays accounts list, ESC - exit from password locker, GP - generate password" "\n").lower().strip()
         print('.' * 10)
 
         if short_code == "esc":
             print("Goodbye!")
-            break
+        break
         #
         # elif short_code == "ca":
         #     print("Sign Up")
@@ -89,60 +89,65 @@ def main():
         # print('\n')
         # print('-' * 10)
 
-        elif short_code == "list":
-            if display_users():
-                print("Below is the list of users:")
-                print('\n')
-                for user in display_users():
-                    print(f"{user.user_name}")
-                    print('\n')
-            else:
-                print("No users saved yet")
-
         elif short_code == "ca":
-            print("Create new account")
-            print('*' * 10)
-            account_name = input("Account name: ")
-            account_username = input("Account User Name: ")
-            print('.' * 10)
-            password_option = input("(ep-enter existing password) or (gp-generate new password) \n").strip()
-            print('.' * 10)
-            while True:
-                if password_option == "ep":
-                    account_password = input("Enter your password: (minimum 6 characters): ")
-                    break
-                elif password_option == "gp":
-                    account_password = generate_password()
-                    break
-                else:
-                    print("Invalid!")
-                    break
-            save_credential(create_credential(account_name, account_username, account_password))
-            print('*' * 10)
-            print(
-                f"created account: \n Account:{account_name}\n User Name:{account_username} \n Password: {account_password}")
-            print("account has been created succesfully!")
-            print('*' * 10)
-        elif short_code == "da":
-            if display_accounts():
-                print("Here's your list of account(s): ")
-                print('#' * 10)
-            for account in display_accounts():
-                print(f" Site:{account.account_name} \n User Name:{account_username}\n Password:{account_password}")
-                print('#' * 10)
-
+        print("Create new account")
+        print('*' * 10)
+        account_name = input("Account name: ")
+        account_username = input("Account User Name: ")
+        print('.' * 10)
+        password_option = input(
+            "(ep-enter existing password) or (gp-generate new password) \n").strip()
+        print('.' * 10)
+        while True:
+            if password_option == "ep":
+                account_password = input(
+                    "Enter your password: (minimum 6 characters): ")
+                break
+            elif password_option == "gp":
+                account_password = generate_password()
+                break
             else:
-                print("You don't have an account!")
+                print("Invalid!")
+                break
+        save_credential(create_credential(
+            account_name, account_username, account_password))
+        print('*' * 10)
+        print(
+            f"created account: \n Account:{account_name}\n User Name:{account_username} \n Password: {account_password}")
+        print("account has been created succesfully!")
+        print('*' * 10)
 
-        elif short_code == "esc":
-            print("come again!")
-            break
-        # else:
-        #     print("Invalid!")
-        #     break
-        else:
-            print("Please create an account inorder to proceed:")
+    elif short_code == "list":
+    if display_users():
+        print("Below is the list of users:")
+        print('\n')
+        for user in display_users():
+            print(f"{user.user_name}")
+            print('\n')
+    else:
+        print("No users saved yet")
 
+
+elif short_code == "da":
+if display_accounts():
+    print("Here's your list of account(s): ")
+    print('#' * 10)
+for account in display_accounts():
+    print(
+        f" Site:{account.account_name} \n User Name:{account_username}\n Password:{account_password}")
+    print('#' * 10)
+
+else:
+    print("You don't have an account!")
+
+elif short_code == "esc":
+print("come again!")
+break
+# else:
+#     print("Invalid!")
+#     break
+else:
+print("Please create an account to proceed:")
 
 #    break
 
