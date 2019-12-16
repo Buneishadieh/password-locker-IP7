@@ -42,3 +42,24 @@ class TestUser(unittest.TestCase):
 
     def test_display_users(self):
         self.assertEqual(User.display_users(), User.user_list)
+        
+####
+
+        class TestCredentials(unittest.TestCase):
+
+            # Test that define test cases for credentials.
+
+            def setUp(self):
+                # set up method to run before each test cases
+
+                self.new_credential = Credentials("Instagram", "Thee_mike", "mike1121")
+
+            def test_init(self):
+                # Test case to test if the object is initialized properly.
+
+                self.assertEqual(self.new_credential.account_name, "Instagram")
+                self.assertEqual(self.new_credential.account_username, "Thee_mike")
+                self.assertEqual(self.new_credential.account_password, "mike1121")
+
+            def tearDown(self):
+                Credentials.credential_list = []
