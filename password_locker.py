@@ -38,8 +38,8 @@ class Credentials:
 
         @classmethod
         def check_user_exist(cls, user_name, password):
- 
-            # Method that checks if a user exist from user list.
+
+            # This method checks if a user exist from user list.
 
             for user in User.user_list:
                 if user.user_name == user_name and user.password == password:
@@ -54,7 +54,7 @@ class Credentials:
 
         def delete_account(self):
 
-            # delete_account method removes a saved credential from credential list.
+            # delete_account method removes saved credentials from credential list.
 
             Credentials.credential_list.remove(self)
 
@@ -66,9 +66,9 @@ class Credentials:
             return cls.credential_list
 
         def generate_password(self):
-            char = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+            char = string.ascii_uppercase + string.ascii_lowercase + string.digits + "!#$%^*"
 
-            gen_pass = "".join(random.choice(char) for _ in range(8))
+            gen_pass = "".join(random.choice(char) for _ in range(6))
 
             return gen_pass
 
