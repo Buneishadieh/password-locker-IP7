@@ -1,14 +1,14 @@
-##Project Name
+## Project Name
 Password-locker
 
-##Project Author
+## Project Author
 Mike Munene 
 
-###Project Description
+### Project Description
 This is a terminal working project where one us to store his/her account and password,he/she can also create an account and also generate a password.
 Password Locker is a python application that helps users generate and store passwords for their accounts such as facebook, twitter, gmail etc The password locker runs on the terminal and uses short codes to navigate through it.
 
-###Setup Instructions
+### Setup Instructions
 clone this repository
 
 have python3.7 on your device
@@ -19,10 +19,10 @@ Test application using $ python3.7 password_locker_test.py
 
 Once you run the App follow the instructions on the terminal
 
-####Technology Used
+#### Technology Used
 Python3.7
 
-####BDD
+#### BDD
 ca - Creates a new account
 
 log - logs in
