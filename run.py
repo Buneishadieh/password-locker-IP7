@@ -60,4 +60,28 @@ def generate_password():
 
 def main():
   print("welcome to password locker...")
+  print('\n')
+  while True:
+      print('.' * 10)
+      short_code = input(
+          "Use the following short codes: CA- create a new user account, LOG - login into your account, ESC - exit from password locker \n").lower().strip()
+      print('.' * 10)
+
+      if short_code == "esc":
+          print("Goodbye!")
+          break
+
+      elif short_code == "ca":
+          print("Sign Up")
+          print('-' * 10)
+          user_name = input("User_name: ")
+          password = input("Password: ")
+          email = input("Email: ")
+
+          save_user(create_user(user_name, password, email))
+          print('\n')
+
+          print("account has been created succesfully!")
+          print('\n')
+          print('-' * 10)
 
