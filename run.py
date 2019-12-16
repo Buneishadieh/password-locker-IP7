@@ -34,4 +34,9 @@ def create_credential(account_name, account_username, account_password):
     return new_credential
 
 
+def save_credential(credential):
+    # Function to save new account credentials.
+
+    credential.save_account()
+
 
