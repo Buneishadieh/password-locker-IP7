@@ -46,4 +46,18 @@ def delete_account(credential):
     credential.delete_account()
 
 
+def display_accounts():
+    # Function that returns all the saved credential.
+
+    return Credentials.display_accounts()
+
+
+def generate_password():
+    # Function that generates random password.
+
+    password_gen = Credentials.generate_password()
+    return password_gen
+
+def main():
+  print("welcome to password locker...")
 
