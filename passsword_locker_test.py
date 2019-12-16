@@ -1,5 +1,4 @@
 import unittest
-
 from password_locker import User
 from password_locker import Credentials
 
@@ -42,7 +41,7 @@ class TestUser(unittest.TestCase):
 
     def test_display_users(self):
         self.assertEqual(User.display_users(), User.user_list)
-        
+
 ####
 
         class TestCredentials(unittest.TestCase):
@@ -63,3 +62,34 @@ class TestUser(unittest.TestCase):
 
             def tearDown(self):
                 Credentials.credential_list = []
+
+                def test_save_account(self):
+                    # Test case to test if the object credential is saved in to credential_list.
+
+                    self.new_credential.save_account()
+                    self.assertEqual(len(Credentials.credential_list), 1)
+
+                def test_save_multiple_account(self):
+                    # Test case to test if we can save multiple credential objects.
+
+                    self.new_credential.save_account()
+                    test_account = Credentials("Facebook", "Thee_Mike", "Michael1")
+                    test_account.save_account()
+                    self.assertEqual(len(Credentials.credential_list), 2)
+
+                def test_delete_account(self):
+                    # Test case to test if we can remove an account from credential list.
+
+                    self.new_credential.save_account()
+                    test_credential = Credentials("github", "Munene19", "x1vkstuk")
+                    test_credential.save_account()
+
+                    self.new_credential.delete_account()
+
+                    self.assertEqual(len(Credentials.credential_list), 1)
+
+                def test_display_accounts(self):
+                    # Test case to test if lists of accounts are displayed.
+
+                    self.assertEqual(Credentials.display_accounts(), Credentials.credential_list)
+

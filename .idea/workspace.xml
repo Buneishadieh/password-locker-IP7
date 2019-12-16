@@ -25,7 +25,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in passsword_locker_test.py">
     <configuration name="Unittests for passsword_locker_test.TestUser" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -40,8 +40,38 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for passsword_locker_test.TestUser.test_display_users.TestCredentials" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passsword_locker_test.TestUser.test_display_users.TestCredentials&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in passsword_locker_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/passsword_locker_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in passsword_locker_test.py" />
+        <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser.test_display_users.TestCredentials" />
         <item itemvalue="Python tests.Unittests for passsword_locker_test.TestUser" />
       </list>
     </recent_temporary>
@@ -70,5 +100,23 @@
       <updated>1576458929384</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1290" height="2" key="GridCell.Tab.0.bottom" timestamp="1576461258594">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="2" key="GridCell.Tab.0.bottom/0.27.1312.741@0.27.1312.741" timestamp="1576461258594" />
+    <state width="1290" height="2" key="GridCell.Tab.0.center" timestamp="1576461258594">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="2" key="GridCell.Tab.0.center/0.27.1312.741@0.27.1312.741" timestamp="1576461258594" />
+    <state width="1290" height="2" key="GridCell.Tab.0.left" timestamp="1576461258593">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="2" key="GridCell.Tab.0.left/0.27.1312.741@0.27.1312.741" timestamp="1576461258593" />
+    <state width="1290" height="2" key="GridCell.Tab.0.right" timestamp="1576461258594">
+      <screen x="0" y="27" width="1312" height="741" />
+    </state>
+    <state width="1290" height="2" key="GridCell.Tab.0.right/0.27.1312.741@0.27.1312.741" timestamp="1576461258594" />
   </component>
 </project>
