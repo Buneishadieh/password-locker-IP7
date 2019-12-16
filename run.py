@@ -40,3 +40,10 @@ def save_credential(credential):
     credential.save_account()
 
 
+def delete_account(credential):
+    # Function to delete a credential.
+
+    credential.delete_account()
+
+
+
