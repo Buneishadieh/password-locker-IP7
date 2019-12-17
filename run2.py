@@ -65,7 +65,7 @@ def main():
     print('\n')
     while True:
         print('.' * 10)
-        short_code = input("Use the following short codes: CA- create a new account, CU- Create user, LOG - login into your account, LIST - to display users list, DA - Displays accounts list, ESC - exit from password locker, GP - generate password" "\n").lower().strip()
+        short_code = input("Use the following short codes: CA- create a new account, CU- Sign up, LOG - login into your account, LIST - to display users list, DA - Displays accounts list, ESC - exit from password locker, GP - generate password" "\n").lower().strip()
         print('.' * 10)
         if short_code == "esc":
             print("Goodbye!")
@@ -80,7 +80,7 @@ def main():
             save_user(create_user(user_name, password, email))
             print('\n')
 
-            print("User account has been created successfully!")
+            print("account has been created successfully!")
             print('\n')
             print('-' * 10)
         elif short_code == "ca":
@@ -89,11 +89,11 @@ def main():
             account_name = input("Account name: ")
             account_username = input("Account User Name: ")
             print('*' * 10)
-            password_option = input("(ep-Enter existing password) or (gp-Generate new password)\n").strip()
+            password_option = input("(ep-enter password)\n").strip()
             print('*' * 10)
-            print("account has been created successfully!")
             if password_option == "ep":
-                account_password = input("Enter existing password: (minimum 6       characters): ")           
+                account_password = input("Enter existing password: (minimum 6       characters): ")
+                
             elif password_option == "gp":
                  account_password = generate_password()
                  
@@ -109,16 +109,6 @@ def main():
                     print('\n')
             else:
                 print("No users saved yet")
-        elif short_code == "log":
-                print("Enter your User name and your Password to log in:")
-                print('-' * 10)
-                user_name = input("User name: ")
-                password = input("password: ")
-                sign_in = login_user(user_name,password)               
-        if sign_in == True:
-                print("welcome {user_name}")
-                print('.'* 10)
-                
         elif short_code == "da":
             if display_accounts():
                 print("Here's your list of account(s): ")
