@@ -25,6 +25,8 @@ Python3.7
 #### BDD
 ca - Creates a new account
 
+cu - Sign up
+
 log - logs in
 
 esc - Exits the app:
